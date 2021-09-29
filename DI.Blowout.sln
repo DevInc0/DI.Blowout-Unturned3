@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31402.337
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DI.Blowout", "DI.Blowout\DI.Blowout.csproj", "{AE495C45-90D2-4DC9-808E-A4C59C7BF6CE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AE495C45-90D2-4DC9-808E-A4C59C7BF6CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE495C45-90D2-4DC9-808E-A4C59C7BF6CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE495C45-90D2-4DC9-808E-A4C59C7BF6CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE495C45-90D2-4DC9-808E-A4C59C7BF6CE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {03FE1580-B454-449A-B5EB-1D6F35407796}
+	EndGlobalSection
+EndGlobal
