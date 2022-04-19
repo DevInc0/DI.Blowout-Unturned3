@@ -8,15 +8,9 @@ using UnityEngine;
 namespace DI.Blowout.Main
 {
     public partial class BlowoutPlugin : XMLPlugin<Configuration>
-    {
-        #region FIELDS        
-
+    {        
         private BlowoutState _blowoutState;
-
-        #endregion
-
-        #region LOAD UNLOAD
-
+        
         protected override void Load()
         {
             U.Events.OnBeforePlayerConnected += OnBeforePlayerConnected;
@@ -33,20 +27,12 @@ namespace DI.Blowout.Main
             _blowoutState = BlowoutState.FINISHED;
 
             StopAllCoroutines();
-        }
-
-        #endregion
-
-        #region EVENTS
+        }        
 
         private void OnBeforePlayerConnected(UnturnedPlayer player)
         {
             if (_blowoutState != BlowoutState.FINISHED) player.Kick("Ты куда полез?! Там же выброс! Подожди немного...");
-        }
-
-        #endregion
-
-        #region PERFORMERS
+        }        
 
         private void StartBlowoutPreparing()
         {
@@ -81,10 +67,6 @@ namespace DI.Blowout.Main
             StartCoroutine(BeforeBlowout());
         }
 
-        #endregion        
-
-        #region COROUTINES
-
         private IEnumerator BeforeBlowout()
         {
             yield return new WaitForSeconds(Configuration.BlowoutFrequency);
@@ -113,7 +95,5 @@ namespace DI.Blowout.Main
 
             EndBlowout();
         }
-
-        #endregion
     }
 }
