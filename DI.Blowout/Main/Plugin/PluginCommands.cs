@@ -24,6 +24,7 @@ namespace DI.Blowout.Main
                     SendPlayerCommandHelp(caller);
                     return;
                 }
+                
                 if (mode == "start")
                 {
                     if (_blowoutState != BlowoutState.FINISHED)
@@ -36,6 +37,7 @@ namespace DI.Blowout.Main
                     SendMessage(sender, "Выброс запущен!");
                     return;
                 }
+                
                 if (mode == "end")
                 {
                     if (_blowoutState == BlowoutState.FINISHED)
